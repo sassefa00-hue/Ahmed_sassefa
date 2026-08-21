@@ -57,11 +57,17 @@
       border-radius: 15px;
       border: 4px solid #c49a45;
       background: #e8eee9;
+      overflow: hidden;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #55705f;
-      font-size: 17px;
+    }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
     }
 
     .container {
@@ -169,7 +175,7 @@
   <div class="hero-box">
 
     <div class="photo">
-<img src="Portrait.jpg" alt="المجاهد أحمد بن مختار ساسفة">
+      <img src="Portrait.jpg" alt="المجاهد أحمد بن مختار ساسفة">
     </div>
 
     <h2>أحمد بن مختار ساسفة</h2>
