@@ -3,67 +3,157 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>المجاهد أحمد بن مختار ساسفة</title>
+
+  <title>المجاهد أحمد بن مختار ساسفة | توسنينة</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
+      font-family: Arial, Tahoma, sans-serif;
+      background: #f4f7f5;
       color: #222;
-      line-height: 1.9;
+      line-height: 2;
     }
 
     header {
-      background: #174a2e;
+      background: linear-gradient(135deg, #123d27, #246b43);
       color: white;
       text-align: center;
-      padding: 35px 15px;
+      padding: 55px 20px;
     }
 
     header h1 {
       margin: 0;
-      font-size: 30px;
+      font-size: 34px;
     }
 
     header p {
-      margin-top: 10px;
-      font-size: 18px;
+      font-size: 19px;
+      margin: 10px 0 0;
+    }
+
+    .hero {
+      max-width: 950px;
+      margin: -35px auto 30px;
+      padding: 0 15px;
+    }
+
+    .hero-box {
+      background: white;
+      border-radius: 18px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.10);
+    }
+
+    .photo {
+      width: 210px;
+      height: 260px;
+      margin: 0 auto 20px;
+      border-radius: 15px;
+      border: 4px solid #c49a45;
+      background: #e8eee9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #55705f;
+      font-size: 17px;
     }
 
     .container {
-      max-width: 900px;
-      margin: 25px auto;
+      max-width: 950px;
+      margin: auto;
       padding: 0 15px;
     }
 
     .card {
       background: white;
-      padding: 25px;
-      margin-bottom: 20px;
-      border-radius: 12px;
-      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+      margin-bottom: 25px;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.07);
     }
 
     h2 {
       color: #174a2e;
       border-right: 5px solid #c49a45;
-      padding-right: 10px;
+      padding-right: 12px;
+      margin-top: 0;
     }
 
     .info {
-      background: #f0f7f2;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .info div {
+      background: #f0f6f2;
       padding: 15px;
       border-radius: 10px;
-      margin: 15px 0;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery-box {
+      height: 180px;
+      background: #edf1ee;
+      border: 2px dashed #9aaa9f;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #65756b;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .quote {
+      background: #f7f1df;
+      border-right: 5px solid #c49a45;
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 18px;
     }
 
     footer {
-      background: #174a2e;
+      background: #123d27;
       color: white;
       text-align: center;
-      padding: 20px;
-      margin-top: 30px;
+      padding: 30px 15px;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 5px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 27px;
+      }
+
+      header p {
+        font-size: 17px;
+      }
+
+      .card {
+        padding: 20px;
+      }
+
+      .photo {
+        width: 180px;
+        height: 230px;
+      }
     }
   </style>
 </head>
@@ -72,75 +162,139 @@
 
 <header>
   <h1>المجاهد أحمد بن مختار ساسفة</h1>
-  <p>لمحة تاريخية عن أحد مجاهدي توسنينة</p>
+  <p>صفحة توثيقية من الذاكرة التاريخية لتوسنينة</p>
 </header>
 
-<div class="container">
+<section class="hero">
+  <div class="hero-box">
 
-  <div class="card">
-    <h2>نبذة عن المجاهد</h2>
+    <div class="photo">
+      مكان صورة المجاهد
+    </div>
+
+    <h2>أحمد بن مختار ساسفة</h2>
+
+    <p>
+      صفحة مخصصة للتعريف بالمجاهد أحمد بن مختار ساسفة
+      وحفظ سيرته ضمن الذاكرة التاريخية لمنطقة توسنينة.
+    </p>
+
+  </div>
+</section>
+
+<main class="container">
+
+  <section class="card">
+
+    <h2>نبذة تاريخية</h2>
 
     <p>
       وُلد المجاهد أحمد بن مختار ساسفة سنة 1910 بتوسنينة،
       ونشأ في وسط ريفي متشبّع بالقيم الأصيلة من شهامة
-      وكرم وشجاعة وحب الوطن.
+      وشجاعة وحب الوطن.
     </p>
 
     <div class="info">
-      <strong>الاسم:</strong> أحمد بن مختار ساسفة<br>
-      <strong>سنة الميلاد:</strong> 1910<br>
-      <strong>مكان الميلاد:</strong> توسنينة
+
+      <div>
+        <strong>الاسم</strong><br>
+        أحمد بن مختار ساسفة
+      </div>
+
+      <div>
+        <strong>سنة الميلاد</strong><br>
+        1910
+      </div>
+
+      <div>
+        <strong>مكان الميلاد</strong><br>
+        توسنينة
+      </div>
+
     </div>
-  </div>
 
-  <div class="card">
-    <h2>مسيرته النضالية</h2>
+  </section>
+
+  <section class="card">
+
+    <h2>المسيرة النضالية</h2>
 
     <p>
-      عُرف المجاهد أحمد بن مختار ساسفة بمواقفه الوطنية
-      وإسهاماته في مقاومة الاستعمار الفرنسي، إلى جانب
-      أبناء المنطقة الذين حملوا على عاتقهم مسؤولية الدفاع
-      عن الوطن والوقوف في وجه الاستعمار.
+      يمثل تاريخ المجاهد أحمد بن مختار ساسفة جزءاً من
+      الذاكرة الوطنية والمحلية لمنطقة توسنينة.
     </p>
 
     <p>
-      وتبقى سيرته جزءاً من الذاكرة التاريخية لمنطقة
-      توسنينة، ومن تاريخ الرجال الذين ساهموا في مسيرة
-      التحرير واسترجاع السيادة الوطنية.
+      وتهدف هذه الصفحة إلى جمع المعلومات والوثائق
+      والشهادات المتعلقة بسيرته، مع الحرص على توثيق
+      المعلومات والتحقق من مصادرها.
     </p>
-  </div>
 
-  <div class="card">
+  </section>
+
+  <section class="card">
+
     <h2>توسنينة والذاكرة التاريخية</h2>
 
     <p>
-      تزخر منطقة توسنينة بتاريخ حافل بالرجال والنساء الذين
-      ساهموا في خدمة الوطن خلال مختلف مراحل التاريخ.
-      وتوثيق هذه السير يساعد الأجيال الجديدة على معرفة
-      تاريخ منطقتهم والمحافظة على الذاكرة الجماعية.
+      توثيق تاريخ أبناء المنطقة والمحافظة على سيرتهم
+      يساعد الأجيال الجديدة على معرفة تاريخ منطقتهم
+      والاعتزاز بالذاكرة الوطنية.
     </p>
-  </div>
 
-  <div class="card">
-    <h2>توثيق</h2>
+    <div class="quote">
+      الذاكرة التاريخية ليست مجرد ماضٍ، بل أمانة تنتقل
+      من جيل إلى جيل.
+    </div>
+
+  </section>
+
+  <section class="card">
+
+    <h2>الصور والوثائق</h2>
+
+    <div class="gallery">
+
+      <div class="gallery-box">
+        صورة تاريخية<br>
+        ستضاف لاحقاً
+      </div>
+
+      <div class="gallery-box">
+        وثيقة تاريخية<br>
+        ستضاف لاحقاً
+      </div>
+
+      <div class="gallery-box">
+        شهادة أو صورة عائلية<br>
+        ستضاف لاحقاً
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="card">
+
+    <h2>ملاحظة حول التوثيق</h2>
 
     <p>
-      هذه الصفحة مخصصة لجمع وتوثيق المعلومات التاريخية
-      المتعلقة بالمجاهد أحمد بن مختار ساسفة وأبناء المنطقة.
+      هذه الصفحة مشروع توثيقي مفتوح لإضافة المعلومات
+      والصور والوثائق المتعلقة بالمجاهد أحمد بن مختار
+      ساسفة ومنطقة توسنينة، بعد التحقق من صحتها ومصدرها.
     </p>
 
-    <p>
-      يمكن إضافة الصور والوثائق والشهادات التاريخية
-      لاحقاً بعد التحقق من مصادرها.
-    </p>
-  </div>
+  </section>
 
-</div>
+</main>
 
 <footer>
-  <p>الذاكرة التاريخية لتوسنينة 🇩🇿</p>
+
+  <p>🇩🇿 الذاكرة التاريخية لتوسنينة 🇩🇿</p>
+
   <p>رحم الله شهداء ومجاهدي الجزائر</p>
+
 </footer>
 
 </body>
-        </html>
+</html>
