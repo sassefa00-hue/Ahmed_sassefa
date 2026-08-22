@@ -1,256 +1,201 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>المجاهد أحمد بن مختار ساسفة | توسنينة</title>
+<title>المجاهد أحمد بن مختار ساسفة | توسنينة</title>
 
-  <style>
+<style>
+* {
+  box-sizing: border-box;
+}
 
-    * {
-      box-sizing: border-box;
-    }
+body {
+  margin: 0;
+  font-family: Arial, Tahoma, sans-serif;
+  background: #f4f7f5;
+  color: #222;
+  line-height: 2;
+}
 
-    body {
-      margin: 0;
-      font-family: Arial, Tahoma, sans-serif;
-      background: #f4f7f5;
-      color: #222;
-      line-height: 2;
-    }
+header {
+  background: linear-gradient(135deg, #123d27, #246b43);
+  color: white;
+  text-align: center;
+  padding: 55px 20px;
+}
 
-    header {
-      background: linear-gradient(135deg, #123d27, #246b43);
-      color: white;
-      text-align: center;
-      padding: 55px 20px;
-    }
+header h1 {
+  margin: 0;
+  font-size: 34px;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 34px;
-    }
+header p {
+  font-size: 19px;
+  margin: 10px 0 0;
+}
 
-    header p {
-      font-size: 19px;
-      margin: 10px 0 0;
-    }
+.container {
+  max-width: 950px;
+  margin: auto;
+  padding: 20px 15px;
+}
 
-    .hero {
-      max-width: 950px;
-      margin: -35px auto 30px;
-      padding: 0 15px;
-    }
+.hero {
+  max-width: 950px;
+  margin: -35px auto 30px;
+  padding: 0 15px;
+}
 
-    .hero-box {
-      background: white;
-      border-radius: 18px;
-      padding: 30px;
-      text-align: center;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.10);
-    }
+.hero-box,
+.card {
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
 
-    .photo {
-      width: 210px;
-      height: 260px;
-      margin: 0 auto 20px;
-      border-radius: 15px;
-      border: 4px solid #c49a45;
-      background: #e8eee9;
-      overflow: hidden;
-    }
+.hero-box {
+  padding: 30px;
+  text-align: center;
+}
 
-    .photo img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      display: block;
-    }
+.photo {
+  width: 220px;
+  height: 280px;
+  margin: 0 auto 20px;
+  border-radius: 15px;
+  border: 4px solid #c49a45;
+  overflow: hidden;
+  background: white;
+}
 
-    .container {
-      max-width: 950px;
-      margin: auto;
-      padding: 0 15px;
-    }
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
 
-    .card {
-      background: white;
-      margin-bottom: 25px;
-      padding: 30px;
-      border-radius: 16px;
-      box-shadow: 0 5px 18px rgba(0,0,0,0.07);
-    }
+.card {
+  padding: 30px;
+  margin-bottom: 25px;
+}
 
-    h2 {
-      color: #174a2e;
-      border-right: 5px solid #c49a45;
-      padding-right: 12px;
-      margin-top: 0;
-    }
+h2 {
+  color: #174a2e;
+  border-right: 5px solid #c49a45;
+  padding-right: 12px;
+  margin-top: 0;
+}
 
-    h3 {
-      color: #246b43;
-      margin-top: 25px;
-    }
+h3 {
+  color: #246b43;
+}
 
-    .info {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 15px;
-      margin-top: 20px;
-    }
+.info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
 
-    .info div {
-      background: #f0f6f2;
-      padding: 15px;
-      border-radius: 10px;
-    }
+.info div {
+  background: #f0f6f2;
+  padding: 15px;
+  border-radius: 10px;
+}
 
-    .timeline {
-      border-right: 3px solid #c49a45;
-      padding-right: 20px;
-    }
+.operation {
+  background: #f7f1df;
+  border-right: 5px solid #c49a45;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 10px;
+}
 
-    .timeline-item {
-      margin-bottom: 25px;
-      position: relative;
-    }
+.quote {
+  background: #f0f6f2;
+  border-right: 5px solid #174a2e;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-size: 18px;
+}
 
-    .timeline-item::before {
-      content: "";
-      width: 13px;
-      height: 13px;
-      background: #246b43;
-      border-radius: 50%;
-      position: absolute;
-      right: -28px;
-      top: 10px;
-    }
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
 
-    .year {
-      font-weight: bold;
-      color: #174a2e;
-      font-size: 20px;
-    }
+.gallery-box {
+  background: white;
+  border: 2px solid #d8e0db;
+  border-radius: 14px;
+  overflow: hidden;
+  text-align: center;
+}
 
-    .operation {
-      background: #f7f1df;
-      border-right: 5px solid #c49a45;
-      padding: 20px;
-      margin: 15px 0;
-      border-radius: 10px;
-    }
+.gallery-box img {
+  width: 100%;
+  height: 280px;
+  object-fit: contain;
+  display: block;
+  background: white;
+}
 
-    .quote {
-      background: #f0f6f2;
-      border-right: 5px solid #174a2e;
-      padding: 20px;
-      border-radius: 10px;
-      font-size: 18px;
-      margin-top: 20px;
-    }
+.gallery-title {
+  padding: 12px;
+  font-weight: bold;
+  color: #174a2e;
+  background: #f5f8f6;
+}
 
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
+footer {
+  background: #123d27;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+  margin-top: 40px;
+}
 
-    .gallery-box {
-      background: #edf1ee;
-      border-radius: 12px;
-      overflow: hidden;
-      border: 2px solid #d8e0db;
-      text-align: center;
-    }
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 27px;
+  }
 
-    .gallery-box img {
-      width: 100%;
-      height: 260px;
-      object-fit: contain;
-      display: block;
-      background: white;
-    }
+  .photo {
+    width: 180px;
+    height: 230px;
+  }
 
-    .gallery-title {
-      padding: 12px;
-      font-weight: bold;
-      color: #174a2e;
-      background: #f5f8f6;
-    }
+  .card {
+    padding: 20px;
+  }
 
-    footer {
-      background: #123d27;
-      color: white;
-      text-align: center;
-      padding: 30px 15px;
-      margin-top: 40px;
-    }
-
-    footer p {
-      margin: 5px;
-    }
-
-    @media (max-width: 600px) {
-
-      header h1 {
-        font-size: 27px;
-      }
-
-      header p {
-        font-size: 17px;
-      }
-
-      .card {
-        padding: 20px;
-      }
-
-      .photo {
-        width: 180px;
-        height: 230px;
-      }
-
-      .gallery-box img {
-        height: 240px;
-      }
-
-    }
-
-  </style>
-
+  .gallery-box img {
+    height: 240px;
+  }
+}
+</style>
 </head>
 
 <body>
 
-
 <header>
-
   <h1>المجاهد أحمد بن مختار ساسفة</h1>
-
-  <p>
-    لمحة تاريخية من الذاكرة الوطنية لمنطقة توسنينة
-  </p>
-
+  <p>لمحة تاريخية من الذاكرة الوطنية لمنطقة توسنينة</p>
 </header>
 
-
 <section class="hero">
-
   <div class="hero-box">
 
     <div class="photo">
-
-      <img
-        src="portrait.jpg"
-        alt="صورة المجاهد أحمد بن مختار ساسفة">
-
+      <img src="./portrait.jpg" alt="صورة المجاهد أحمد بن مختار ساسفة">
     </div>
 
-    <h2>
-      المجاهد أحمد بن مختار ساسفة
-    </h2>
+    <h2>المجاهد أحمد بن مختار ساسفة</h2>
 
     <p>
       سيرة مجاهد من أبناء توسنينة ساهم في العمل الثوري
@@ -258,327 +203,243 @@
     </p>
 
   </div>
-
 </section>
-
 
 <main class="container">
 
-
 <section class="card">
+<h2>الميلاد والنشأة</h2>
 
-  <h2>الميلاد والنشأة</h2>
+<p>
+وُلد المجاهد أحمد بن مختار ساسفة سنة 1910 بتوسنينة،
+ونشأ في وسط ريفي متشبّع بالقيم الأصيلة من شهامة
+وكرامة ووطنية.
+</p>
 
-  <p>
-    وُلد المجاهد أحمد بن مختار ساسفة سنة 1910 بتوسنينة،
-    ونشأ في وسط ريفي متشبّع بالقيم الأصيلة من شهامة
-    وكرامة ووطنية.
-  </p>
+<p>
+كان معروفًا بين أهل منطقته برجولته وحكمته وحرصه
+الدائم على مساعدة الغير، وهو ما جعله يحظى باحترام
+كبير منذ شبابه.
+</p>
 
-  <p>
-    كان معروفًا بين أهل منطقته برجولته وحكمته وحرصه
-    الدائم على مساعدة الغير، وهو ما جعله يحظى باحترام
-    كبير منذ شبابه.
-  </p>
+<div class="info">
 
-  <div class="info">
+<div>
+<strong>الاسم</strong><br>
+أحمد بن مختار ساسفة
+</div>
 
-    <div>
-      <strong>الاسم</strong><br>
-      أحمد بن مختار ساسفة
-    </div>
+<div>
+<strong>سنة الميلاد</strong><br>
+1910
+</div>
 
-    <div>
-      <strong>سنة الميلاد</strong><br>
-      1910
-    </div>
+<div>
+<strong>مكان الميلاد</strong><br>
+توسنينة
+</div>
 
-    <div>
-      <strong>مكان الميلاد</strong><br>
-      توسنينة
-    </div>
-
-  </div>
-
+</div>
 </section>
 
 
 <section class="card">
+<h2>بداية المقاومة والعمليات الفدائية</h2>
 
-  <h2>بداية المقاومة والعمليات الفدائية</h2>
+<p>
+قبل التحاقه الرسمي بصفوف جبهة التحرير الوطني،
+شارك في المقاومة الشعبية ضد المستعمر الفرنسي،
+وقام بعمليتين فدائيتين بارزتين.
+</p>
 
-  <p>
-    قبل التحاقه الرسمي بصفوف جبهة التحرير الوطني،
-    شارك في المقاومة الشعبية ضد المستعمر الفرنسي،
-    وقام بعمليتين فدائيتين بارزتين.
-  </p>
+<div class="operation">
+<h3>العملية الأولى</h3>
+<p>
+تمت في فيرمة زفّار بنواحي دوار القنانشة،
+ضد نقطة استعمارية كانت تضايق السكان.
+</p>
+</div>
 
-
-  <div class="operation">
-
-    <h3>العملية الأولى</h3>
-
-    <p>
-      تمت في فيرمة زفّار بنواحي دوار القنانشة،
-      ضد نقطة استعمارية كانت تضايق السكان.
-    </p>
-
-  </div>
-
-
-  <div class="operation">
-
-    <h3>العملية الثانية</h3>
-
-    <p>
-      تمت في دوار المحارزة، وتميّزت بالشجاعة والدقّة
-      في التنفيذ، مما ساهم في إرباك العدو ورفع
-      معنويات المواطنين.
-    </p>
-
-  </div>
-
+<div class="operation">
+<h3>العملية الثانية</h3>
+<p>
+تمت في دوار المحارزة، وتميّزت بالشجاعة والدقّة
+في التنفيذ، مما ساهم في إرباك العدو ورفع
+معنويات المواطنين.
+</p>
+</div>
 </section>
 
 
 <section class="card">
+<h2>المخابئ السرية «الكازمات»</h2>
 
-  <h2>المخابئ السرية «الكازمات»</h2>
+<p>
+كان للمجاهد دور نوعي في دعم العمل الثوري من خلال
+إنشاء المخابئ السرية «كازمات» داخل مزرعته.
+</p>
 
-  <p>
-    كان للمجاهد دور نوعي في دعم العمل الثوري من خلال
-    إنشاء المخابئ السرية «كازمات» داخل مزرعته.
-  </p>
+<p>
+استُخدمت هذه المخابئ لإخفاء السلاح وتخزين المؤونة
+وإيواء المجاهدين المطاردين من طرف الاحتلال.
+</p>
 
-  <p>
-    استُخدمت هذه المخابئ لإخفاء السلاح وتخزين المؤونة
-    وإيواء المجاهدين المطاردين من طرف الاحتلال.
-  </p>
+<p>
+وكانت تتميز بدقة الإعداد والسرية العالية، مما
+مكنها من الإفلات من مراقبة المستعمر.
+</p>
 
-  <p>
-    وكانت تتميز بدقة الإعداد والسرية العالية، مما
-    مكنها من الإفلات من مراقبة المستعمر.
-  </p>
-
-  <div class="quote">
-
-    كانت هذه العمليات بداية الطريق النضالي الذي أكّد
-    إخلاصه واستعداده للتضحية في سبيل تحرير الوطن.
-
-  </div>
-
+<div class="quote">
+كانت هذه العمليات بداية الطريق النضالي الذي أكّد
+إخلاصه واستعداده للتضحية في سبيل تحرير الوطن.
+</div>
 </section>
 
 
 <section class="card">
+<h2>الالتحاق بالثورة التحريرية</h2>
 
-  <h2>الالتحاق بالثورة التحريرية</h2>
+<h3>سنة 1956</h3>
 
-  <div class="timeline">
+<p>
+مع اشتداد الثورة التحريرية، التحق سنة 1956
+رسميًا بصفوف المجاهدين.
+</p>
 
+<p>
+تولّى تموين الثوار، ونقل السلاح والمؤونة،
+وإيصال التعليمات العسكرية، وتقديم الدعم
+اللوجستي للمجاهدين في مختلف نواحي توسنينة
+والمناطق المجاورة لها.
+</p>
 
-    <div class="timeline-item">
+<h3>المسؤولية المدنية</h3>
 
-      <div class="year">
-        1956
-      </div>
+<p>
+بعد فترة من النشاط الميداني المكثّف، كُلّف
+بمسؤولية مدنية على عدد من الدواوير شرق مدينة
+توسنينة إلى غاية دوار أولاد بلحصين.
+</p>
 
-      <p>
-        مع اشتداد الثورة التحريرية، التحق سنة 1956
-        رسميًا بصفوف المجاهدين.
-      </p>
+<p>
+ولعب دورًا مهمًا في تنظيم الدعم الشعبي وتوحيد
+جهود الأهالي لخدمة الثورة.
+</p>
 
-      <p>
-        تولّى تموين الثوار، ونقل السلاح والمؤونة،
-        وإيصال التعليمات العسكرية، وتقديم الدعم
-        اللوجستي للمجاهدين في مختلف نواحي توسنينة
-        والمناطق المجاورة لها.
-      </p>
+<h3>سنة 1959</h3>
 
-    </div>
-
-
-    <div class="timeline-item">
-
-      <div class="year">
-        المسؤولية المدنية
-      </div>
-
-      <p>
-        بعد فترة من النشاط الميداني المكثّف، كُلّف
-        بمسؤولية مدنية على عدد من الدواوير شرق مدينة
-        توسنينة إلى غاية دوار أولاد بلحصين.
-      </p>
-
-      <p>
-        ولعب دورًا مهمًا في تنظيم الدعم الشعبي وتوحيد
-        جهود الأهالي لخدمة الثورة.
-      </p>
-
-    </div>
-
-
-    <div class="timeline-item">
-
-      <div class="year">
-        1959
-      </div>
-
-      <p>
-        في سنة 1959، اعترفت له قيادة جبهة التحرير
-        الوطني بالعضوية الرسمية تقديرًا لدوره الفعّال
-        والتزامه الثابت.
-      </p>
-
-    </div>
-
-  </div>
-
+<p>
+في سنة 1959، اعترفت له قيادة جبهة التحرير
+الوطني بالعضوية الرسمية تقديرًا لدوره الفعّال
+والتزامه الثابت.
+</p>
 </section>
 
 
 <section class="card">
+<h2>الاعتقال والصمود</h2>
 
-  <h2>الاعتقال والصمود</h2>
+<p>
+جرّ نشاطه الكبير عليه ملاحقة الاستعمار الفرنسي،
+فتم اعتقاله بتاريخ <strong>01/03/1961</strong>.
+</p>
 
-  <p>
-    جرّ نشاطه الكبير عليه ملاحقة الاستعمار الفرنسي،
-    فتم اعتقاله بتاريخ
-    <strong>01/03/1961</strong>.
-  </p>
-
-  <p>
-    وتعرّض خلال فترة سجنه للمضايقات والضغط، غير أنه
-    بقي صامدًا ومتمسكًا بمبادئه إلى غاية فجر الاستقلال
-    سنة 1962.
-  </p>
-
+<p>
+وتعرّض خلال فترة سجنه للمضايقات والضغط، غير أنه
+بقي صامدًا ومتمسكًا بمبادئه إلى غاية فجر الاستقلال
+سنة 1962.
+</p>
 </section>
 
 
 <section class="card">
+<h2>بعد الاستقلال</h2>
 
-  <h2>بعد الاستقلال</h2>
+<p>
+بعد الاستقلال، عاش المجاهد أحمد بن مختار ساسفة
+حياة بسيطة هادئة، واستمر في خدمة مجتمعه بما عُرف
+عنه من حكمة ووقار.
+</p>
 
-  <p>
-    بعد الاستقلال، عاش المجاهد أحمد بن مختار ساسفة
-    حياة بسيطة هادئة، واستمر في خدمة مجتمعه بما عُرف
-    عنه من حكمة ووقار.
-  </p>
-
-  <p>
-    وقد كرّمته الدولة الجزائرية بمنحه شهادة المقاوم
-    اعترافًا بتضحياته.
-  </p>
-
+<p>
+وقد كرّمته الدولة الجزائرية بمنحه شهادة المقاوم
+اعترافًا بتضحياته.
+</p>
 </section>
 
 
 <section class="card">
+<h2>وفاته وذكراه</h2>
 
-  <h2>وفاته وذكراه</h2>
+<p>
+في سنة <strong>1992</strong>، انتقل إلى رحمة الله،
+تاركًا وراءه سيرة مشرّفة وتاريخًا نضاليًا يبقى
+مصدر فخر لأبنائه وأحفاده ولأهل المنطقة كافة.
+</p>
 
-  <p>
-    في سنة <strong>1992</strong>، انتقل إلى رحمة الله،
-    تاركًا وراءه سيرة مشرّفة وتاريخًا نضاليًا يبقى
-    مصدر فخر لأبنائه وأحفاده ولأهل المنطقة كافة.
-  </p>
-
-  <div class="quote">
-
-    رحم الله المجاهد أحمد بن مختار ساسفة،
-    وجعل مثواه الجنة، وجازاه عن الجزائر خير الجزاء.
-
-  </div>
-
+<div class="quote">
+رحم الله المجاهد أحمد بن مختار ساسفة، وجعل مثواه
+الجنة، وجازاه عن الجزائر خير الجزاء.
+</div>
 </section>
 
 
 <section class="card">
+<h2>الصور والوثائق</h2>
 
-  <h2>الصور والوثائق</h2>
+<div class="gallery">
 
-  <div class="gallery">
+<div class="gallery-box">
+<img src="./Certificat.jpg"
+alt="شهادة المقاوم أحمد بن مختار ساسفة">
+<div class="gallery-title">
+شهادة المقاوم
+</div>
+</div>
 
+<div class="gallery-box">
+<img src="./Bigrraphy.jpg"
+alt="وثيقة تتعلق بسيرة أحمد بن مختار ساسفة">
+<div class="gallery-title">
+وثيقة من الأرشيف
+</div>
+</div>
 
-    <div class="gallery-box">
+<div class="gallery-box">
+<img src="./Archive_photo.jpg"
+alt="صورة أرشيفية للمجاهد">
+<div class="gallery-title">
+صورة أرشيفية
+</div>
+</div>
 
-      <img
-        src="Certificat.jpg"
-        alt="شهادة المقاوم أحمد بن مختار ساسفة">
-
-      <div class="gallery-title">
-        شهادة المقاوم
-      </div>
-
-    </div>
-
-
-    <div class="gallery-box">
-
-      <img
-        src="Bigrraphy.jpg"
-        alt="وثيقة تتعلق بسيرة أحمد بن مختار ساسفة">
-
-      <div class="gallery-title">
-        وثيقة من الأرشيف
-      </div>
-
-    </div>
-
-
-    <div class="gallery-box">
-
-      <img
-        src="Archive_photo.jpg"
-        alt="صورة أرشيفية">
-
-      <div class="gallery-title">
-        صورة أرشيفية
-      </div>
-
-    </div>
-
-
-  </div>
-
+</div>
 </section>
 
 
 <section class="card">
+<h2>حول التوثيق</h2>
 
-  <h2>حول التوثيق</h2>
+<p>
+هذه الصفحة مخصصة لحفظ الذاكرة التاريخية للمجاهد
+أحمد بن مختار ساسفة، وجمع الصور والوثائق والشهادات
+المرتبطة بسيرته، مع الحرص على توثيق المعلومات
+والتحقق من مصادرها.
+</p>
 
-  <p>
-    هذه الصفحة مخصصة لحفظ الذاكرة التاريخية للمجاهد
-    أحمد بن مختار ساسفة، وجمع الصور والوثائق والشهادات
-    المرتبطة بسيرته، مع الحرص على توثيق المعلومات
-    والتحقق من مصادرها.
-  </p>
-
-  <p>
-    رحم الله المجاهد أحمد بن مختار ساسفة وجميع شهداء
-    ومجاهدي الجزائر.
-  </p>
+<p>
+رحم الله المجاهد أحمد بن مختار ساسفة وجميع شهداء
+ومجاهدي الجزائر.
+</p>
 
 </section>
-
 
 </main>
 
-
 <footer>
-
-  <p>
-    🇩🇿 الذاكرة التاريخية لتوسنينة 🇩🇿
-  </p>
-
-  <p>
-    المجاهد أحمد بن مختار ساسفة
-  </p>
-
+<p>🇩🇿 الذاكرة التاريخية لتوسنينة 🇩🇿</p>
+<p>المجاهد أحمد بن مختار ساسفة</p>
 </footer>
 
-
 </body>
-  </html>
+                                       </html>
